@@ -1,8 +1,8 @@
 import WorkCard from '../WorkCard/WorkCard';
 import { nanoid } from 'nanoid'
-import styles from './WorkCatalog.module.scss';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import styles from './WorkCatalog.module.scss';
 
 function id() {
     return nanoid()
@@ -28,7 +28,7 @@ const WorkCatalog = () => {
     }, [])
 
     return (
-        <div className={styles.catalog}>
+        <div className={styles.catalog} name="works">
             <div className={styles.catalog__title}>
                 Мои работы
             </div>

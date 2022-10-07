@@ -1,0 +1,14 @@
+.contacts{
+    margin: 10px 0;
+    height: 1500px;
+    &__title{
+        font-size:  30px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+    &__subtitle{
+        text-align: center;
+        opacity: 0.6;
+    }
+}

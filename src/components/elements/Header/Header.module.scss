@@ -1,0 +1,19 @@
+.header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__items{
+        display: flex;
+    }
+    &__item{
+        transition: all 0.3s linear;
+        list-style-type: none;
+        margin: 0 15px;
+        cursor: pointer;
+        &:hover{
+            transition: all 0.3s linear;
+            color: #F65151;
+        }
+    }
+}

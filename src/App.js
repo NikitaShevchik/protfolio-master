@@ -1,7 +1,7 @@
 import Contacts from './components/elements/Contacts/Contacts';
 import Header from './components/elements/Header/Header';
 import WorkCatalog from './components/elements/WorkCatalog/WorkCatalog';
-import ScrollTop from './components/UI/ScrollTop/ScrollTop';
+import ScrollToTop from './components/UI/ScrollTop/ScrollToTop';
 import styles from './App.module.scss';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <WorkCatalog />
       <Contacts />
-      <ScrollTop />
+      <ScrollToTop />
     </div>
   );
 }

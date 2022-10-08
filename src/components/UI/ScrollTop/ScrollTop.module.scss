@@ -1,0 +1,13 @@
+.scrolltop{
+    position: fixed;
+    bottom: 100px;
+    right: 150px;
+    font-size: 50px;
+    padding: 0 8px;
+    cursor: pointer;
+    transition: color 0.2s linear;
+    &:hover{
+        color: #F65151;
+        transition: color 0.2s linear;
+    }
+}

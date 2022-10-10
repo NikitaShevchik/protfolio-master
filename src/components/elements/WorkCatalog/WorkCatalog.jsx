@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from './WorkCatalog.module.scss';
+import BlankCard from '../../UI/BlankCard/BlankCard';
 
 function id() {
     return nanoid()
@@ -24,11 +25,20 @@ const WorkCatalog = () => {
             <div className={styles.catalog__title}>
                 Мои работы
             </div>
-            <div className={styles.catalog__items}>
-                {works.map(work => {
-                    return <WorkCard key={work.id} name={work.name} stack={work.stack} link={work.link} img={work.img} />
-                })}
-            </div>
+            {works.length > 0 ?
+                <div className={styles.catalog__items}>
+                    {works.map(work => {
+                        return <WorkCard key={work.id} name={work.name} stack={work.stack} link={work.link} img={work.img} />
+                    })}
+                </div>
+                :
+                <div className={styles.catalog__items}>
+                    <BlankCard />
+                    <BlankCard />
+                    <BlankCard />
+                    <BlankCard />
+                </div>
+            }
         </div >
     )
 }

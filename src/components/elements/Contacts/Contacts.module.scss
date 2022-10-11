@@ -11,4 +11,10 @@
         text-align: center;
         opacity: 0.6;
     }
+    &__items{
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

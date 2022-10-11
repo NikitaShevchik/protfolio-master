@@ -1,0 +1,39 @@
+.contactcard{
+    transition: all 0.2s linear;
+    background-color: #FEF4F4;
+    width: 200px;
+    margin: 10px;
+    display: block;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    &__content{
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__logo{
+        color: #F65151;
+        font-size: 100px;
+    }
+    &__title{
+        color: rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    &:hover{
+        transition: all 0.2s linear;
+        transform: translate(0, -3%);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+        .contactcard__logo{
+            color: #c73737;
+        }
+    }
+}
+
+//#F65151
+
+//#FEF4F4
